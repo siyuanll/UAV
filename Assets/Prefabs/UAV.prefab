@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e6ec9f0b256144bcea82facfb4680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatingSpeed: 20
+  RollAngle: 0
+  paramText4: {fileID: 0}
 --- !u!1 &5413937401430004716
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e6ec9f0b256144bcea82facfb4680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatingSpeed: 20
+  RollAngle: 0
+  paramText4: {fileID: 0}
 --- !u!1 &5413937401470762127
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,9 +101,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5413937401470762121}
-  - component: {fileID: 551855191445210302}
+  - component: {fileID: 1112752040582582758}
   - component: {fileID: 5413937401470762124}
   - component: {fileID: 5413937401470762126}
+  - component: {fileID: 2363668325954712749}
+  - component: {fileID: 620106778}
   m_Layer: 0
   m_Name: UAV
   m_TagString: Untagged
@@ -118,14 +122,14 @@ Transform:
   m_GameObject: {fileID: 5413937401470762127}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 68, y: 5, z: 9}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 5413937401720340885}
   - {fileID: 5413937401800035874}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &551855191445210302
+--- !u!114 &1112752040582582758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +138,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5413937401470762127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ffa3e434e1084f9c97b7784017c7084, type: 3}
+  m_Script: {fileID: 11500000, guid: 22d10efaf085b4f4cbad640f6374a6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &5413937401470762124
@@ -166,6 +170,45 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2363668325954712749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413937401470762127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffa3e434e1084f9c97b7784017c7084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YawAngle: 0
+  RollingAngle: 0
+  PitchAngle: 0
+  paramText1: {fileID: 0}
+  paramText2: {fileID: 0}
+  paramText3: {fileID: 0}
+  paramText5: {fileID: 0}
+  line: {fileID: 0}
+  points: []
+  cameras:
+  - {fileID: 5413937401720340886}
+  - {fileID: 0}
+  shotcuts:
+  - 1
+  - 2
+--- !u!114 &620106778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413937401470762127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c702272afa5467c88e83aa48657ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5413937401550384926
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e6ec9f0b256144bcea82facfb4680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatingSpeed: 20
+  RollAngle: 0
+  paramText4: {fileID: 0}
 --- !u!1 &5413937401720340886
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413937401720340886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5523825596072480761}
@@ -304,7 +348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e6ec9f0b256144bcea82facfb4680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatingSpeed: 20
+  RollAngle: 0
+  paramText4: {fileID: 0}
 --- !u!1 &5413937401800035877
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,13 +375,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413937401800035877}
-  m_LocalRotation: {x: 0.08237714, y: -0.0017806289, z: -0.0025605445, w: 0.99659634}
-  m_LocalPosition: {x: 0, y: 1, z: -4}
+  m_LocalRotation: {x: 0.097010985, y: -0.0017426012, z: -0.0025863086, w: 0.9952785}
+  m_LocalPosition: {x: 0.00000047683716, y: 1, z: -4.0000005}
   m_LocalScale: {x: 0.49999994, y: 0.5, z: 0.49999994}
   m_Children: []
   m_Father: {fileID: 5413937401470762121}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 9.45, y: 89.769, z: -0.313}
+  m_LocalEulerAnglesHint: {x: 11.134, y: -0.232, z: -0.32}
 --- !u!20 &5413937401800035875
 Camera:
   m_ObjectHideFlags: 0
@@ -451,6 +496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8cb387498f5b854191f6c2b27a33c81, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: c8cb387498f5b854191f6c2b27a33c81, type: 3}
       propertyPath: m_Name
       value: Assembly - Impeller Blade-6
@@ -525,6 +574,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 63347fd4868ac3d4d9c6b0dd4bb63aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 63347fd4868ac3d4d9c6b0dd4bb63aa1, type: 3}
       propertyPath: m_Name
       value: Assembly - Leg-1
@@ -599,6 +652,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3c32fea05c70ec54880654f3d513111e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 3c32fea05c70ec54880654f3d513111e, type: 3}
       propertyPath: m_Name
       value: Assembly - Main Strc-1
@@ -673,6 +730,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6efb8076b94bef94f98816cf20dea958, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 6efb8076b94bef94f98816cf20dea958, type: 3}
       propertyPath: m_Name
       value: Assembly - Gear arm-2
@@ -747,6 +808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ef57c8aa9a0bc2a48a885e6272179e8f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: ef57c8aa9a0bc2a48a885e6272179e8f, type: 3}
       propertyPath: m_Name
       value: Assembly - Gearing-1
@@ -821,6 +886,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fa6f55d7af05fc46a50d7103f907064, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 0fa6f55d7af05fc46a50d7103f907064, type: 3}
       propertyPath: m_Name
       value: Assembly - Gearing-4
@@ -895,6 +964,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd9d191726b6dd946b4da45b545acb35, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: dd9d191726b6dd946b4da45b545acb35, type: 3}
       propertyPath: m_Name
       value: Assembly - Gearing-2
@@ -969,6 +1042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 92179fba519ef4d4685ad67ed10f2165, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 92179fba519ef4d4685ad67ed10f2165, type: 3}
       propertyPath: m_Name
       value: Assembly - Gearing-3
@@ -1043,6 +1120,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 804c33c915799af4c94d936826eb9418, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 804c33c915799af4c94d936826eb9418, type: 3}
       propertyPath: m_Name
       value: Assembly - Camera-1
@@ -1117,6 +1198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 454d1b78adab3174bb6f389e6e3baf8e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 454d1b78adab3174bb6f389e6e3baf8e, type: 3}
       propertyPath: m_Name
       value: Assembly - Gear arm-4
@@ -1191,6 +1276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e825169ccc3f346449fd164d26f5622e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: e825169ccc3f346449fd164d26f5622e, type: 3}
       propertyPath: m_Name
       value: Assembly - Leg-3
@@ -1265,6 +1354,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0290cb0e9ca3bb74da3d9c3885414b0e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 0290cb0e9ca3bb74da3d9c3885414b0e, type: 3}
       propertyPath: m_Name
       value: Assembly - Leg-2
@@ -1339,6 +1432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 35ac19da251e58f4aa80065d51e5e396, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 35ac19da251e58f4aa80065d51e5e396, type: 3}
       propertyPath: m_Name
       value: Assembly - Gear arm-1
@@ -1413,6 +1510,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: caa0afb26b82aa542ab9fb199c9f87f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: caa0afb26b82aa542ab9fb199c9f87f8, type: 3}
       propertyPath: m_Name
       value: Assembly - Impeller Blade-5
@@ -1487,6 +1588,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2aa9ecd2f1186d64990808404025da49, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 2aa9ecd2f1186d64990808404025da49, type: 3}
       propertyPath: m_Name
       value: Assembly - Main Strc-2
@@ -1561,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fb1ca482b6abccd4fb8ec3d24290d520, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: fb1ca482b6abccd4fb8ec3d24290d520, type: 3}
       propertyPath: m_Name
       value: Assembly - Impeller Blade-1
@@ -1635,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3c2d13c1122e3d54ca9c9029d3f9e1bd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: 3c2d13c1122e3d54ca9c9029d3f9e1bd, type: 3}
       propertyPath: m_Name
       value: Assembly - Leg-4
@@ -1709,6 +1822,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a8eb0d8405f3cab4ba4f6501e0d1a921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: a8eb0d8405f3cab4ba4f6501e0d1a921, type: 3}
       propertyPath: m_Name
       value: Assembly - Gear arm-3
@@ -1783,6 +1900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c79a3cd47db8c52419ab47dea9db0a35, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23228c340a36b478a92d5d75559cc713, type: 2}
     - target: {fileID: 919132149155446097, guid: c79a3cd47db8c52419ab47dea9db0a35, type: 3}
       propertyPath: m_Name
       value: Assembly - Impeller Blade-2
