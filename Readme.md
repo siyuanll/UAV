@@ -44,7 +44,7 @@ DT **有两个核心的技术基础，一个是 modeling，另一个是 simulati
 - **Realize automation and cloud accelerated simulation**, which can improve test efficiency
 
 <center>
-<img src="/Users/nian/niannian/SJTU/42大四下/毕设/UAVTwin/pics/无人机数字孪生平台.png" alt="drawing" width="500"/>
+<img src="/UAVTwin/pics/无人机数字孪生平台.png" alt="drawing" width="500"/>
 </center>
 
 
@@ -93,18 +93,18 @@ DT **有两个核心的技术基础，一个是 modeling，另一个是 simulati
 1. **所有的“强烈”碰撞体 building（碰到即无人机坠毁）**：
 
 <center>
-<img src="/Users/nian/niannian/SJTU/42大四下/毕设/UAVTwin/pics/building.png" alt="drawing" width="300"/>
+<img src="/UAVTwin/pics/building.png" alt="drawing" width="300"/>
 </center>
 2.**所有的“微弱”碰撞体道路、电线杆、flower, grass and etc.（碰到只影响飞行轨迹）**：
 
 <center>
-<img src="/Users/nian/niannian/SJTU/42大四下/毕设/UAVTwin/pics/roadGrass.png" alt="drawing" width="300"/>
+<img src="/UAVTwin/pics/roadGrass.png" alt="drawing" width="300"/>
 </center>
 
 UAV modeling and rendering: UAV 机身机臂、机翼、camera and etc.
 
 <center>
-<img src="/Users/nian/niannian/SJTU/42大四下/毕设/UAVTwin/pics/UAV.png" alt="drawing" width="200"/>
+<img src="/UAVTwin/pics/UAV.png" alt="drawing" width="200"/>
 </center>
 
 
@@ -115,7 +115,7 @@ UAV modeling and rendering: UAV 机身机臂、机翼、camera and etc.
 **Visualization of model movemen: ** the motion states of **UAV wings rotation, forward, backward, pitching, rolling, and yawing** can be observed from **first perspective**。
 
 <center>
-  <img src="/Users/nian/niannian/SJTU/42大四下/毕设/UAVTwin/pics/模型运动可视化.png" alt="drawing" width="300"/></center>
+  <img src="/UAVTwin/pics/模型运动可视化.png" alt="drawing" width="300"/></center>
 **Visualization of model parameters**：无人机的**运动参数数据**可以在 UI 面板上以数据、图标、警报等形式呈现。
 
 无人机俯仰姿态角、滚动姿态角、偏航姿态角、机翼旋转角度、坠毁告警等。
@@ -156,23 +156,6 @@ UAV modeling and rendering: UAV 机身机臂、机翼、camera and etc.
 | 完成轨迹展示                                   | 2月15日 |
 | 加入可以看到轨迹全貌的俯视摄像头               | 2月16日 |
 | 完成摄像头视角切换                             | 2月17日 |
-
-### 3. Next
-
-| 工作                                                    | 日期 |
-| ------------------------------------------------------- | ---- |
-|                                                         |      |
-| 无人机集群（先读论文，再加入自己项目）                  |      |
-| 区块链 共识协议加入到项目中（先读论文，再加入自己项目） |      |
-| 跑火箭回收的项目                                        |      |
-|                                                         |      |
-|                                                         |      |
-|                                                         |      |
-
-关于毕设的想法：读论文（发现好的方法、思路） => 复现 + 加入到自己的毕设项目中去 =>（实现的具体技术学习）
-
-
-
 
 
 ## 3. How to use
